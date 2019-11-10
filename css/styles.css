@@ -1,0 +1,236 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family:'Quicksand', sans-serif; 
+}
+
+
+h1 {
+    font-size: 2.488em;
+    color: #f9f9f9;
+    margin-bottom: .25rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+
+h2 {
+    font-size: 2.074rem;
+    text-align: center;
+    margin: 4.5rem 0 2.5rem;
+}
+
+#intro,
+#projects,
+#skills,
+#about {
+    margin: 6rem 0;
+
+}
+
+.column h3 {
+    font-size: 1.728rem;
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+header p {
+    color: #f9f9f9;
+    margin-top: .25rem;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 1.2em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+
+footer {
+    text-align: center;
+    margin: 5rem 0 3rem;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+header {
+    padding-top: 100px;
+    text-align: center;
+    background: linear-gradient(#ffaccf, transparent 95%),
+    linear-gradient(0deg, #fff, transparent),
+    #ffaccf url(https://p0.piqsels.com/preview/622/752/871/sky-backgrounds-earth-outdoor.jpg) no-repeat center;
+    background-size: cover;
+    height: 350px;
+}
+ 
+#intro {
+    text-align: center;
+}
+
+.content {
+    width: 90%;
+    max-width: 1260px;
+    margin: auto;   
+}
+
+/* ---- Page Elements ---- */
+.photo-container {
+    margin-bottom: 2rem;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;    
+}
+
+.photo-container img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.column {
+    border: rgb(233, 223, 227);
+    border-style: solid;
+    border-width: 1px;
+    /* flex-direction: row; */
+}
+
+.column ul {
+    padding: 0;
+}
+
+.column li {
+    display: list-item;
+    text-align: center;
+    list-style: none;
+    list-style-position: outside;
+    
+}
+
+.btn,
+.resume {
+    background-color:#4eb2fa;
+    color: #f9f9f9;
+    padding: 10px 35px;
+    width: 35%;
+    cursor: pointer;
+    margin-top: 3rem;
+    border-style: hidden;
+    border-radius: 12px;
+}
+
+.resume {
+    width: 200px;
+    background-color: #e91e63;
+}
+
+
+.btn:hover {
+    background-color: pink;
+}
+
+.icon {
+    height: 4rem;
+    width: 4rem;
+    display: block;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 4rem;
+    width: 4rem; 
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------ Photo Overlay----------- */
+
+.photo-overlay {
+    color:#f9f9f9;
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    border-radius: 16px;
+    background: rgba(0,0,0, .65);
+}
+
+.photo-overlay h3,
+p {
+    margin: 1rem 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+    .photo-container {
+        width: 48%;
+        float: left;
+        margin-left: 2%;
+    }
+
+    .skills-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .column {
+        width: 33%;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .content {
+        width: 85%;
+        margin: auto;
+    }
+    .photo-container:nth-child(2n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}
+
+@media (min-width: 1025px) { 
+    .content {
+        width: 70%;
+        margin: auto;
+    }
+}
+
