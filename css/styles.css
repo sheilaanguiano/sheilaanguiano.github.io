@@ -51,7 +51,7 @@ header p {
     color: #f9f9f9;
     margin-top: .25rem;
     font-family: 'Quicksand', sans-serif; 
-    font-size: 1.2em;
+    font-size: 1.25rem;
     text-shadow: 0 1px 1px rgba(0,0,0,.8);
 }
 
@@ -245,6 +245,11 @@ p {
     h1{
         font-size: 4.209em;
     }
+    header p {
+        font-size: 1.5rem;
+    }
+
+
     .content {
         width: 70%;
         margin: auto;
