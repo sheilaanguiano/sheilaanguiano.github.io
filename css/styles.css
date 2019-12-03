@@ -76,7 +76,8 @@ header {
     height: 350px;
 }
  
-#intro {
+#intro,
+#about {
     text-align: center;
 }
 
@@ -132,7 +133,6 @@ header {
     cursor: pointer;
     border-style: hidden;
     border-radius: 12px;
-    margin-top: 3rem;
 }
 
 .resume {
